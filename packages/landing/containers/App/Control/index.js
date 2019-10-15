@@ -51,24 +51,24 @@ const ControllSection = ({
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="EASY DEPLOYMENT" {...sectionSubTitle} />
+            <Text content="TU VETERINARIO A UN CLICK" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="Deploy your site with simple commands"
+                  content="HOLA VET"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="You can deploy your site with firebase or Now.sh with some simple process. The deployment is made easy for our customers and according to their needs."
+                  content="Tendrás a tu disposición a un grupo de veterinarios que te acompañaran las 24 horas del dia, todos los días del año."
                   {...description}
                 />
               }
               button={
                 <Link href="#">
                   <a>
-                    <Button title="LEARN MORE" {...button} {...btnStyle} />
+                    <Button title="DESCARGAR APP" {...button} {...btnStyle} />
                   </a>
                 </Link>
               }

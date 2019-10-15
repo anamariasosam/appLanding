@@ -105,7 +105,7 @@ FeatureSlider.propTypes = {
 FeatureSlider.defaultProps = {
   sectionHeader: {},
   sectionSubTitle: {
-    content: 'WHY CHOOSE US',
+    content: '¿POR QUÉ ELEGIRNOS?',
     as: 'span',
     display: 'block',
     textAlign: 'center',
@@ -117,7 +117,7 @@ FeatureSlider.defaultProps = {
   },
   // section title default style
   sectionTitle: {
-    content: 'Key Features of Our App',
+    content: 'Nuestras características principales',
     textAlign: 'center',
     fontSize: ['20px', '24px', '24px', '24px', '30px'],
     fontWeight: '400',

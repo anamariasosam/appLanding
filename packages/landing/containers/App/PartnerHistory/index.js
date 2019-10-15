@@ -11,8 +11,6 @@ import Container from 'common/src/components/UI/Container';
 import PartnerHistoryWrapper, { CounterUpArea } from './partnerHistory.style';
 import GoogleImg from 'common/src/assets/image/app/google.svg';
 import AppleImg from 'common/src/assets/image/app/apple.svg';
-import DribbleImg from 'common/src/assets/image/app/dribbble.svg';
-import MailchimpImg from 'common/src/assets/image/app/mailchimp.svg';
 import BackgroundImg from 'common/src/assets/image/app/partner-bg.png';
 
 const PartnerHistory = ({
@@ -39,26 +37,18 @@ const PartnerHistory = ({
             <FeatureBlock
               title={<Heading {...title} />}
               description={<Text {...description} />}
-              button={<Button title="WORK HISTORY" {...btnStyle} />}
+              button={<Button title="DESCARGAR APP" {...btnStyle} />}
             />
           </Box>
           <Box className="col" {...col} {...cardArea}>
             <CounterUpArea>
               <Card className="card" {...cardStyle}>
-                <Image src={GoogleImg} alt="Google Inc" />
-                <Text content="Google Inc" />
-              </Card>
-              <Card className="card" {...cardStyle}>
                 <Image src={AppleImg} alt="Apple Inc" />
-                <Text content="Apple" />
+                <Text content="iOS" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <Image src={DribbleImg} alt="Dribble Inc" />
-                <Text content="Dribble" />
-              </Card>
-              <Card className="card" {...cardStyle}>
-                <Image src={MailchimpImg} alt="MailChimp Inc" />
-                <Text content="MailChimp" />
+                <Image src={GoogleImg} alt="Google Inc" />
+                <Text content="Android" />
               </Card>
             </CounterUpArea>
           </Box>
@@ -103,7 +93,7 @@ PartnerHistory.defaultProps = {
   },
   // Partner section title default style
   title: {
-    content: 'Your Trusted Partner For Working Together',
+    content: 'iOS & Android',
     fontSize: ['24px', '26px', '30px', '36px', '48px'],
     fontWeight: '300',
     color: '#0f2137',
@@ -115,7 +105,7 @@ PartnerHistory.defaultProps = {
   // Partner section description default style
   description: {
     content:
-      'You can trust us for any kind of services and some of the world class companies have also trusted us .',
+      'Puedes encontrar nuestra aplicación en la AppStore de Apple y en la PlayStore de Android',
     fontSize: '16px',
     color: '#343d48cc',
     lineHeight: '2.1',
@@ -123,7 +113,7 @@ PartnerHistory.defaultProps = {
     textAlign: ['center', 'left'],
   },
   sectionSubTitle: {
-    content: 'TRUSTED PARTNERS',
+    content: 'DESCARGA NUESTRA APLICACIÓN',
     as: 'span',
     textAlign: 'left',
     fontSize: '14px',

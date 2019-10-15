@@ -5,21 +5,14 @@ import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
 import Heading from 'reusecore/src/elements/Heading';
 import Button from 'reusecore/src/elements/Button';
-import Card from 'reusecore/src/elements/Card';
 import Image from 'reusecore/src/elements/Image';
-import Input from 'reusecore/src/elements/Input';
-import FeatureBlock from 'common/src/components/FeatureBlock';
-import ParticlesComponent from '../particles';
-import Container from 'common/src/components/UI/Container';
-import { email } from 'react-icons-kit/ionicons/email';
 import { Icon } from 'react-icons-kit';
 import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward';
+import FeatureBlock from 'common/src/components/FeatureBlock';
+import Container from 'common/src/components/UI/Container';
 import { BannerSquareShape, BannerCircleShape } from '../app.style';
-import BannerWrapper, {
-  DiscountWrapper,
-  DiscountLabel,
+import {
   ButtonWrapper,
-  EmailInputWrapper,
 } from './banner.style';
 
 import AppScreenshot from 'common/src/assets/image/app/mobile.png';
@@ -35,37 +28,18 @@ const DomainSection = ({
   imageArea,
   btnStyle,
   btnStyleTwo,
-  discountAmount,
-  discountText,
 }) => {
   return (
     <Box {...SectionWrapper}>
-      <ParticlesComponent />
       <BannerSquareShape />
       <BannerCircleShape />
       <Container>
         <Box {...row}>
           <Box {...col}>
-            <Box>
-              <DiscountWrapper>
-                <DiscountLabel>
-                  <Text {...discountAmount} className="discountAmount" />
-                  <Text {...discountText} />
-                </DiscountLabel>
-              </DiscountWrapper>
-            </Box>
             <FeatureBlock
               title={<Heading {...title} />}
               description={<Text {...description} />}
             />
-            <EmailInputWrapper>
-              <Input
-                inputType="email"
-                placeholder="Enter Email Address"
-                iconPosition="left"
-                aria-label="email"
-              />
-            </EmailInputWrapper>
             <ButtonWrapper>
               <Link href="#services">
                 <a>
@@ -134,7 +108,7 @@ DomainSection.defaultProps = {
     ml: 'auto',
   },
   title: {
-    content: 'Essential Mobile  App Landing for  Workspaces',
+    content: 'Hola Vet',
     fontSize: ['26px', '30px', '30px', '48px', '60px'],
     fontWeight: '300',
     color: '#0f2137',
@@ -143,14 +117,14 @@ DomainSection.defaultProps = {
   },
   description: {
     content:
-      'A mobile app landing page is important and  essential for right amount of information about your product. Start increasing your user base upon the launch of your product.',
+      'Ten acceso a una red de veterionarios dispuestos a trabajar por el bienestar de tus mascotas en todo momento.',
     fontSize: '16px',
     color: '#343d48',
     lineHeight: '33px',
     mb: '10px',
   },
   button: {
-    title: 'EXPLORE MORE',
+    title: 'DESCARGAR APP',
     type: 'button',
     fontSize: '14px',
     fontWeight: '600',
@@ -170,7 +144,7 @@ DomainSection.defaultProps = {
     fontWeight: '500',
   },
   btnStyleTwo: {
-    title: 'WATCH DEMOS',
+    title: 'VER MÁS',
     type: 'button',
     minWidth: '156px',
     fontSize: '14px',

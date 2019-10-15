@@ -59,27 +59,21 @@ const PaymentSection = ({
       <Container>
         <Box {...row} {...textAreaRow}>
           <Box {...col} {...textArea}>
-            <Text content="PAYMENT SECURITY" {...sectionSubTitle} />
+            <Text content="PAGOS SEGUROS" {...sectionSubTitle} />
             <FeatureBlock
               title={
                 <Heading
-                  content="Secure Payment and Transaction System With #1 ranking"
+                  content="Pago por orientación"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Security of our customer is our basic priority and we are best at it . So no need to worry about online payment and Transaction System ."
+                  content="El costo de una orientación es de $50.000 COP los cuales podrás cancelar al finalizar la atención en nuestra aplicación con tarjeta débito o crédito."
                   {...description}
                 />
               }
-              button={
-                <Link href="#">
-                  <a>
-                    <Button title="HOW IT WORKS" {...button} {...btnStyle} />
-                  </a>
-                </Link>
-              }
+              button={''}
             />
           </Box>
         </Box>

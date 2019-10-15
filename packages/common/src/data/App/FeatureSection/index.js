@@ -2,23 +2,23 @@ const data = {
   features: [
     {
       id: 1,
-      icon: 'flaticon-atom',
-      title: 'App Development',
+      icon: 'flaticon-plus-symbol',
+      title: 'Registra tu mascota',
       description:
-        'If you have to develop a mobile app, this is the most appropriate time. ',
+        'Nuestros veterinarios están listos para atender: caninos, felinos y equinos. ',
     },
     {
       id: 2,
-      icon: 'flaticon-trophy',
-      title: 'UI/UX Design',
+      icon: 'flaticon-user',
+      title: 'Inicia un chat con nuestro asesor',
       description:
-        'We provide the best UI/UX Design by following the latest trends of the market.',
+        'Un asesor estará contigo antes de remitirte al veterinario especialista según la necesidad del paciente',
     },
     {
       id: 3,
       icon: 'flaticon-conversation',
-      title: 'Wireframing Task',
-      description: ' We respect our customer opinions and deals with them. ',
+      title: 'Consulta con el veterinario',
+      description: 'Notificaremos al veterinario para que atienda tu mascota lo más pronto posible. ',
     },
   ],
 };
